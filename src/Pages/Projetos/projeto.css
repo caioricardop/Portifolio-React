@@ -1,0 +1,75 @@
+.projectspage h1 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.projectspage p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.rosa-H1-project {
+  color: #c778dd;
+}
+
+.centerProjects {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-project-1 {
+  border: 1px solid #abb2bf;
+}
+
+.card-project-simple {
+  border: 1px solid #abb2bf;
+  width: 30%;
+}
+
+.imgcard,
+.languagescard {
+  border-bottom: 1px solid #abb2bf;
+}
+
+.languagescard p {
+  margin: 0;
+  padding: 8px;
+  color: #abb2bf;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.mainCard {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.mainCard h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.mainCard p {
+  color: #abb2bf;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.mainCard button {
+  border: 1px solid #c778dd;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  background: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}

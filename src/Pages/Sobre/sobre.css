@@ -1,0 +1,66 @@
+.sobrepage h1 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.sobrepage p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.rosa-H1-sobre {
+  color: #c778dd;
+}
+
+.main-home {
+  margin: 4vw 5vw;
+}
+
+.main-homeSobre {
+  margin: 0vw 5vw;
+  margin-top: 4vw;
+}
+
+.main-homeSobre2 {
+  margin: 0vw 5vw;
+}
+
+.header-containerT78 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectsHome {
+  display: flex;
+  align-items: center;
+}
+
+.projectsHome h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.headerTyt1 {
+  color: #c778dd;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.line {
+  margin-left: 1rem;
+  width: 30rem;
+  height: 1px;
+  background-color: #c778dd;
+}
+
+.view-all-link a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}

@@ -1,13 +1,430 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c33;
+  font-family: "Fira Code", monospace;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main,
+.navbar {
+  margin: 0 5vw;
+}
+
+/* Barra com icones */
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 50vh;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.corda {
+  width: 1px;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  margin-bottom: 6rem;
+}
+/* header */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.select-option {
+  display: flex;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+}
+
+.name p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.name svg {
+  margin-right: 0.5rem;
+}
+
+.rosaMenuHash {
+  color: #c778dd;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* home main */
+
+.text-home-1 {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.text-home-1 h1 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.text-home-1 p {
+  color: #abb2bf;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.rosa-H1-main {
+  color: #c778dd;
+}
+
+.text-home-1 button {
+  border: 1px solid #c778dd;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  background: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  width: 10rem;
+}
+
+.main-home-1 {
+  display: flex;
+  margin: 4vw 5vw;
+}
+
+/* home Titulos */
+
+.main-home {
+  margin: 4vw 5vw;
+}
+
+.header-containerT78 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectsHome {
+  display: flex;
+  align-items: center;
+}
+
+.projectsHome h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.headerTyt1 {
+  color: #c778dd;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.line {
+  margin-left: 1rem;
+  width: 30rem;
+  height: 1px;
+  background-color: #c778dd;
+}
+
+.view-all-link a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+/* cards */
+.centerProjects {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-project-1 {
+  border: 1px solid #abb2bf;
+}
+
+.imgcard,
+.languagescard {
+  border-bottom: 1px solid #abb2bf;
+}
+
+.languagescard p {
+  margin: 0;
+  padding: 8px;
+  color: #abb2bf;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.mainCard {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.mainCard h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.mainCard p {
+  color: #abb2bf;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.mainCard button {
+  border: 1px solid #c778dd;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  background: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+/* sobre */
+
+.aboutmeHome {
+  display: flex;
+  margin: 1vw 0;
+}
+
+.textaabt {
+  margin-top: 3rem;
+  margin-right: 5rem;
+}
+
+.textaabt p {
+  color: #abb2bf;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.textaabt h1 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.textaabt button {
+  border: 1px solid #c778dd;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  background: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  width: 10rem;
+  margin-top: 2rem;
+}
+
+/*skiills */
+
+.skillshome {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.card-skillshome {
+  border: 1px solid #abb2bf;
+}
+
+.languagesSkills {
+  border-bottom: 1px solid #abb2bf;
+}
+
+.languagesSkills p {
+  margin: 0;
+  padding: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/*contact */
+
+.textactt {
+  margin-right: 10rem;
+}
+
+.textactt p {
+  color: #abb2bf;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.textactt button {
+  border: 1px solid #c778dd;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  background: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  width: 10rem;
+  margin-top: 2rem;
+}
+
+.cthome {
+  display: flex;
+  margin: 1vw 0;
+}
+
+/*footer */
+
+footer {
+  border-top: 1px solid #ccc;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer p {
+  color: #abb2bf;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/*Icones de fundo */
+
+.fundo-icon1 {
+  position: absolute;
+  right: 0;
+  top: 60rem;
+  z-index: 1;
+}
+
+.fundo-icon2 {
+  position: absolute;
+  left: 0;
+  top: 40rem;
+  z-index: 1;
+}
+
+.fundo-icon3 {
+  position: absolute;
+  left: -2rem;
+  top: 100rem;
+  z-index: 1;
+}
+
+.fundo-icon4 {
+  position: absolute;
+  right: 0;
+  top: 120rem;
+  z-index: 1;
+}
+
+/*Responsivo */
+
+@media (max-width: 768px) {
+  .main-home-1 {
+    flex-direction: column;
+  }
+
+  .img-home-1 img {
+    max-width: 20rem;
+  }
+
+  .fundo-icon1,
+  .fundo-icon2,
+  .fundo-icon3,
+  .fundo-icon4 {
+    display: none;
+  }
+
+  .centerProjects,
+  .skillshome,
+  .aboutmeHome {
+    flex-direction: column;
+  }
+
+  .textaabt {
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .card-project-1 {
+    margin-bottom: 3rem;
+  }
+  .line {
+    max-width: 10rem;
+  }
+  .view-all-link {
+    display: none;
+  }
+  .textaabt p,
+  .textaabt {
+    margin-right: 0 !important;
+  }
+  .card-project-simple {
+    width:auto !important;
+  }
+}
+
+
+/*animação */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.img-home-1 img {
+  animation: slideInFromRight 1s ease-out 0.5s;
 }

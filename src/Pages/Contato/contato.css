@@ -1,0 +1,96 @@
+/* cards */
+.centerProjects {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-project-1 {
+  border: 1px solid #abb2bf;
+}
+
+.imgcard,
+.languagescard {
+  border-bottom: 1px solid #abb2bf;
+}
+
+.languagescard p {
+  margin: 0;
+  padding: 8px;
+  color: #abb2bf;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.mainCard {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.mainCard h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.mainCard p {
+  color: #abb2bf;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.mainCard button {
+  border: 1px solid #c778dd;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  background: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+/* contato 1 */
+
+.cttblock1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  border: 1px solid #abb2bf;
+  padding: 1rem;
+}
+
+.cttblock1 p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.ctt1 {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #abb2bf;
+  font-weight: 400;
+}
+
+.ctt1 a {
+  font-size: 16px;
+  color: #abb2bf;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.ctt1 i {
+  color: #abb2bf;
+  margin-right: 0.5rem;
+}
+
+.textaabt {
+  margin-top: 1rem;
+  margin-right: 5rem;
+}
