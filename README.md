@@ -1,3 +1,8 @@
+
+![image](https://github.com/caioricardop/Portifolio-React/assets/83782001/e0e9daca-ce09-407e-95b3-829f958dee6b)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
