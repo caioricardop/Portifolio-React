@@ -465,7 +465,10 @@ footer p {
     font-size: 2rem;
   }
 
-  .select-option.active{
+  .select-option.active {
     right: 0;
-  }
+    overflow: hidden; /* Oculta a barra de rolagem */
+    position: fixed; /* Fixa o elemento ativo no lugar */
+}
+
 }

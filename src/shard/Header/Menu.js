@@ -1,15 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function Menu() {
   const [isMenuActive, setIsMenuActive] = useState(false);
   const [isSelectOptionActive, setIsSelectOptionActive] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuActive(!isMenuActive);
     setIsSelectOptionActive(!isSelectOptionActive);
-    setIsMenuOpen(!isMenuOpen);
   };
+
+  const closeMenuOnClickOutside = (event) => {
+    if (
+      isMenuActive &&
+      !event.target.closest('.menu') &&
+      !event.target.closest('.hamburger-menu')
+    ) {
+      setIsMenuActive(false);
+      setIsSelectOptionActive(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', closeMenuOnClickOutside);
+
+    return () => {
+      document.removeEventListener('click', closeMenuOnClickOutside);
+    };
+  }, [isMenuActive]); 
+
   return (
     <div>
       <div class="menu">
@@ -50,21 +68,12 @@ function Menu() {
             <p>Caio</p>
           </a>
         </div>
-        <div
-      className={`hamburger-menu ${isMenuOpen ? 'open' : ''}`}
-      onClick={toggleMenu}
-    >
-      {isMenuOpen ? (
-        <div className="close-icon">X</div>
-      ) : (
-        <>
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
-        </>
-      )}
-    </div>
-        <div className={`select-option ${isSelectOptionActive ? 'active' : ''}`}>
+        <div className={`hamburger-menu ${isMenuActive ? 'active' : ''}`} onClick={toggleMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+    <div className={`select-option ${isSelectOptionActive ? 'active' : ''}`}>
           <a href="/">
             <span class="rosaMenuHash">#</span>Home
           </a>
