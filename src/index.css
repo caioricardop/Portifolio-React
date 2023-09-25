@@ -460,6 +460,7 @@ footer p {
     gap: 2rem;
     font-size: 2rem;
     z-index: 999;
+    transition: right 0.8s ease;
   }
 
   .rosaMenuHash {
