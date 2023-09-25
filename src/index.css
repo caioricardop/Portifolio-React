@@ -446,7 +446,7 @@ footer p {
 @media (max-width: 768px) {
   .hamburger-menu {
     display: block;
-    z-index: 999;
+    z-index: 1;
   }
 
   .select-option {
@@ -459,6 +459,7 @@ footer p {
     padding: 100px 20px;
     gap: 2rem;
     font-size: 2rem;
+    z-index: 999;
   }
 
   .rosaMenuHash {
@@ -467,8 +468,8 @@ footer p {
 
   .select-option.active {
     right: 0;
-    overflow: hidden; /* Oculta a barra de rolagem */
-    position: fixed; /* Fixa o elemento ativo no lugar */
+    overflow: hidden; 
+    position: fixed; 
 }
 
 }
