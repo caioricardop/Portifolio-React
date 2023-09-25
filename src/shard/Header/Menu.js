@@ -3,10 +3,12 @@ import React, { useState } from 'react';
 function Menu() {
   const [isMenuActive, setIsMenuActive] = useState(false);
   const [isSelectOptionActive, setIsSelectOptionActive] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuActive(!isMenuActive);
     setIsSelectOptionActive(!isSelectOptionActive);
+    setIsMenuOpen(!isMenuOpen);
   };
   return (
     <div>
@@ -48,11 +50,20 @@ function Menu() {
             <p>Caio</p>
           </a>
         </div>
-        <div className={`hamburger-menu ${isMenuActive ? 'active' : ''}`} onClick={toggleMenu}>
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
+        <div
+      className={`hamburger-menu ${isMenuOpen ? 'open' : ''}`}
+      onClick={toggleMenu}
+    >
+      {isMenuOpen ? (
+        <div className="close-icon">X</div>
+      ) : (
+        <>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </>
+      )}
+    </div>
         <div className={`select-option ${isSelectOptionActive ? 'active' : ''}`}>
           <a href="/">
             <span class="rosaMenuHash">#</span>Home
