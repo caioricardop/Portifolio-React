@@ -1,4 +1,13 @@
+import React, { useState } from 'react';
+
 function Menu() {
+  const [isMenuActive, setIsMenuActive] = useState(false);
+  const [isSelectOptionActive, setIsSelectOptionActive] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuActive(!isMenuActive);
+    setIsSelectOptionActive(!isSelectOptionActive);
+  };
   return (
     <div>
       <div class="menu">
@@ -39,7 +48,12 @@ function Menu() {
             <p>Caio</p>
           </a>
         </div>
-        <div class="select-option">
+        <div className={`hamburger-menu ${isMenuActive ? 'active' : ''}`} onClick={toggleMenu}>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div className={`select-option ${isSelectOptionActive ? 'active' : ''}`}>
           <a href="/">
             <span class="rosaMenuHash">#</span>Home
           </a>
