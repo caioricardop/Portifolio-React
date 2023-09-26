@@ -94,3 +94,18 @@
   margin-top: 1rem;
   margin-right: 5rem;
 }
+
+.blocoespac {
+margin-top: 2rem;
+}
+
+.imgmobile {
+display: none;
+}
+
+
+@media (max-width: 768px) { 
+  .imgmobile {
+    display: block;
+    }
+}

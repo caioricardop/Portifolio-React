@@ -1,4 +1,5 @@
 import "../Contato/contato.css";
+import imageHome2 from "../img/image-homw2.png";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
                 contato comigo
               </p>
             </div>
-            <div class="cttblock1">
+            <div class="cttblock1 blocoespac">
               <p>Me mande uma mensagem aqui</p>
               <div class="ctt1">
                 <i class="fas fa-envelope"></i> Caioricardolp@gmail.com
@@ -75,6 +76,7 @@ function App() {
             </div>
           </div>
         </div>
+        <img class="imgmobile" src={imageHome2} alt="Caio" />
       </main>
     </div>
   );
