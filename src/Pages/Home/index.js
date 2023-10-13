@@ -1,8 +1,6 @@
 import imageHome1 from "../img/Image-home-1.png";
-import projetoModelo from "../img/projeto1.png";
 import imageHome2 from "../img/image-homw2.png";
 import cubo from "../img/cubo.svg";
-import quadradoCP from "../img/quadradoCP.svg";
 import pontosFundo from "../img/pontos-fundo.svg";
 
 function App() {
@@ -31,7 +29,7 @@ function App() {
             <img src={imageHome1} />
           </div>
         </div>
-
+        {/* 
         <div class="main-home">
           <div class="header-containerT78">
             <div class="projectsHome">
@@ -95,7 +93,7 @@ function App() {
             </div>
           </div>
         </div>
-
+*/}
         <div class="main-home">
           <div class="header-containerT78">
             <div class="projectsHome">
@@ -214,8 +212,6 @@ function App() {
       <div class="txtFundo">
         <img class="fundo-icon1" src={cubo} />
         <img class="fundo-icon2" src={pontosFundo} />
-        <img class="fundo-icon3" src={quadradoCP} />
-        <img class="fundo-icon4" src={pontosFundo} />
       </div>
     </div>
   );

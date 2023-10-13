@@ -77,9 +77,10 @@ function Menu() {
           <a href="/">
             <span class="rosaMenuHash">#</span>Home
           </a>
+        {/* 
           <a href="/projetos">
             <span class="rosaMenuHash">#</span>Projetos
-          </a>
+          </a>*/}
           <a href="/sobre">
             <span class="rosaMenuHash">#</span>Sobre
           </a>
